@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience — [Your Name]</title>
+    <meta
+      name="description"
+      content="Professional experience and work history of [Your Name], [Your Professional Title]."
+    />
+    <link rel="canonical" href="https://YOUR-USERNAME.github.io/experience.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="[Your Name] — Portfolio" />
+    <meta property="og:title" content="Experience — [Your Name]" />
+    <meta
+      property="og:description"
+      content="Professional experience and work history of [Your Name], [Your Professional Title]."
+    />
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/img/profile.jpg" />
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/experience.html" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Experience — [Your Name]" />
+    <meta
+      name="twitter:description"
+      content="Professional experience and work history of [Your Name], [Your Professional Title]."
+    />
+    <meta name="twitter:image" content="https://YOUR-USERNAME.github.io/img/profile.jpg" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Self-hosted, so only the font file itself needs preloading —
+         no external stylesheet round trip. -->
+    <link
+      rel="preload"
+      href="/fonts/inter-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="/index.html" class="site-branding">[Your Name]</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle__icon"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li><a href="/index.html" class="site-nav__link">Home</a></li>
+            <li>
+              <a href="/experience.html" class="site-nav__link" aria-current="page">Experience</a>
+            </li>
+            <li><a href="/projects.html" class="site-nav__link">Projects</a></li>
+            <li><a href="/credentials.html" class="site-nav__link">Credentials</a></li>
+            <li><a href="/contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-header">
+        <div class="container">
+          <h1>Experience</h1>
+          <p class="page-header__lede">
+            [A short intro sentence framing your career so far — years of experience, industries, or
+            the kind of problems you work on.]
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="work-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="work-heading">Work Experience</h2>
+          </div>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__meta">
+                <span class="timeline__role">[Job Title]</span>
+                <span class="timeline__org">[Company Name]</span>
+                <span class="timeline__dates">[Month Year] — Present</span>
+              </div>
+              <p>[One-sentence summary of your role and scope at this company.]</p>
+              <ul class="timeline__list">
+                <li>[Achievement or responsibility #1 — quantify impact where possible.]</li>
+                <li>[Achievement or responsibility #2.]</li>
+                <li>[Achievement or responsibility #3.]</li>
+              </ul>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__meta">
+                <span class="timeline__role">[Job Title]</span>
+                <span class="timeline__org">[Company Name]</span>
+                <span class="timeline__dates">[Month Year] — [Month Year]</span>
+              </div>
+              <p>[One-sentence summary of your role and scope at this company.]</p>
+              <ul class="timeline__list">
+                <li>[Achievement or responsibility #1.]</li>
+                <li>[Achievement or responsibility #2.]</li>
+                <li>[Achievement or responsibility #3.]</li>
+              </ul>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__meta">
+                <span class="timeline__role">[Job Title]</span>
+                <span class="timeline__org">[Company Name]</span>
+                <span class="timeline__dates">[Month Year] — [Month Year]</span>
+              </div>
+              <p>[One-sentence summary of your role and scope at this company.]</p>
+              <ul class="timeline__list">
+                <li>[Achievement or responsibility #1.]</li>
+                <li>[Achievement or responsibility #2.]</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+        <div class="social-links">
+          <a class="social-links__link" href="https://github.com/[your-handle]">GitHub</a>
+          <a class="social-links__link" href="https://linkedin.com/in/[your-handle]">LinkedIn</a>
+          <a class="social-links__link" href="mailto:[you@example.com]">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
