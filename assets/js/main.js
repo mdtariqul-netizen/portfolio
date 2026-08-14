@@ -16,6 +16,36 @@ const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /**
+ * Personal Strengths page: animate each bar filling to its target
+ * percentage the first time it scrolls into view. Falls back to an
+ * instant, unanimated fill if the user prefers reduced motion.
+ */
+const strengthItems = document.querySelectorAll('.strength-item');
+if (strengthItems.length) {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  strengthItems.forEach(item => {
+    const value = item.getAttribute('data-value') || '0';
+    item.style.setProperty('--target-width', `${value}%`);
+  });
+
+  if (prefersReducedMotion) {
+    strengthItems.forEach(item => item.classList.add('in-view'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    strengthItems.forEach(item => observer.observe(item));
+  }
+}
+
+/**
  * Hero network-topology animation (home page only).
  * Renders a drifting node-link graph in the hero background,
  * styled as a light "ops console" map: blue links, orange nodes
