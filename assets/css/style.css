@@ -308,6 +308,30 @@ section + section{border-top:1px solid var(--line);}
 .sec-head h2{font-size:28px;}
 .sec-line{flex:1; height:1px; background:var(--line);}
 
+/* ---------- ABOUT STATEMENT ---------- */
+.about-statement{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:3px solid var(--blue);
+  border-radius:var(--radius);
+  padding:32px 36px;
+}
+.about-statement p{
+  margin:0;
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(19px,2.4vw,24px);
+  line-height:1.55;
+  color:var(--ink);
+  max-width:62ch;
+}
+.about-statement .accent{
+  font-style:normal;
+  color:var(--orange-deep);
+  font-weight:600;
+}
+
 /* ---------- COMPETENCIES ---------- */
 .comp-grid{
   display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
